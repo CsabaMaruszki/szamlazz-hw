@@ -13,7 +13,7 @@ export default defineConfig(
     ],
   },
   {
-    files: ['**/*.{ts}'],
+    files: ['**/*.ts'],
     extends: [
       eslint.configs.recommended,
       tseslint.configs.recommendedTypeChecked
@@ -21,6 +21,7 @@ export default defineConfig(
     languageOptions: {
       parserOptions: {
         projectService: true,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },

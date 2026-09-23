@@ -8,7 +8,21 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
-    "types": ["node"]
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@steps/*": [
+        "./src/steps/*"
+      ],
+      "@pages/*": [
+        "./src/pageobjects/*"
+      ]
+    }
   },
-  "include": ["playwright.config.ts", "tests/**/*.ts"]
+  "include": [
+    "playwright.config.ts",
+    "tests/**/*.ts",
+    "src/**/*.ts"
+  ]
 }
